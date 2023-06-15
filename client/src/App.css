@@ -1,42 +1,88 @@
-#root {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+li{
+  list-style: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg-dark{
+  background-color: #444;
+  color: #fff;
 }
 
-.card {
-  padding: 2em;
+.bg-primary{
+  background-color: #f8b195;
+  color: #333;
 }
 
-.read-the-docs {
-  color: #888;
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  padding: 10px 15px;
+  border: 1px dotted #333;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #f1c376;
+  transition: 1s ease-in;
+}
+
+/* Auth Form Styling */
+.auth-page {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+.auth-form {
+  width: 100%;
+  padding: 20px;
+}
+
+.auth-form form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.form-controller {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+
+.form-controller label {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+

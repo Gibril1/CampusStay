@@ -1,0 +1,54 @@
+.footer {
+    margin: 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer-text p {
+    text-align: left;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 10px 0;
+}
+
+.footer-contact-form {
+    display: flex;
+}
+
+.footer-contact label {
+    padding-bottom: 5px;
+}
+
+.footer-contact-form input {
+    flex: 1;
+    align-self: center;
+    border: none;
+    outline: 0;
+    padding: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links li{
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-links li:hover {
+    color: #f8b195;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
